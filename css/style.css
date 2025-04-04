@@ -149,7 +149,57 @@ main{
     .servicios{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 200px;
+        grid-template-rows: 400px;
         column-gap: 2rem;
      }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p{
+    text-align: center;
+    line-height: 2;
+    font-weight: normal;
+}
+
+.servicio .iconos{
+ background-color: var(--dorado);
+ height: 10rem;
+ width: 10rem;   
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/** clientes **/
+
+.formulario {
+    background-color: var(--secundario);
+    width: min(60 rem, 100%); /** utilizar el valor mas pequeño **/
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;       
+}
+
+.formulario legend{
+    text-align: center;
+    color: var(--dorado);
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
